@@ -14,8 +14,7 @@ namespace Problems
         {
             foreach (int i in F())
             {
-                //Console.Write($"{i}");
-                Console.Write("{0}",i);
+                Console.Write($"{i}");
             }
         }
     }
