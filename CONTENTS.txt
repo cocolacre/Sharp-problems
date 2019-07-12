@@ -1,8 +1,8 @@
-Problems-1/
-Problems-2/
-Problems-3/
-Problems-4/
-Problems-5/
-Problems-6/
-Problems-7/
+Problems-2/problem_2.cs
+Problems-3/problem_3.cs
+Problems-4/problem_4.cs
+Problems-5/problem_5.cs
 token_extractor.py
+    Скрипт для извлечения всех токенов из исходного кода задач.
+tokens.txt
+    Извлеченные и вручную отредактированные токены.
