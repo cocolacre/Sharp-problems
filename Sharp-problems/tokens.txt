@@ -1,4 +1,5 @@
 # manually edited after token_extractor.py
+TOKEN FREQUENCY
 +	1
 +=	1
 Current	1
