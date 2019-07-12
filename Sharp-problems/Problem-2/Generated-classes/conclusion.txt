@@ -1,0 +1,132 @@
+Итак.
+826.
+public override void F(int a)
+public void F<T>(object a)
+//B.F(int a) 
+
+825
+public override void F(int a)
+public void F<T>(string[] a)
+очевидно //B.F(int a) 
+
+824
+public override void F(int a)
+public void F<T>(int a)
+//B.F(int a) 
+
+823
+public override void F(int a)
+public void F<T>(params T[] a)
+//B.F(params T[] a) 
+
+822
+public override void F(int a)
+public void F(object a)
+//B.F(object a) 
+
+81
+public void F(string[] a)
+public void F<T>(params T[] a)
+//B.F(params T[] a) 
+
+80
+public void F(string[] a)
+public void F(object a)
+//B.F(object a) 
+
+45
+public void F(int a)
+public void F<T>(object a)
+//B.F(int a) 
+
+43
+public void F(int a)
+public void F<T>(int a)
+//B.F(int a) 
+
+42
+public void F(int a)
+public void F<T>(params T[] a)
+//B.F(int a) 
+
+41
+public void F(int a)
+public void F(object a)
+//B.F(int a) 
+
+293
+public void F<T>(object a)
+public override void F(int a)
+//B.F(int a) 
+
+279
+public void F<T>(object a)
+public void F<T>(string[] a)
+//A.F(int) 
+
+277
+public void F<T>(object a)
+public void F<T>(params T[] a)
+//B.F(params T[] a) 
+
+276
+public void F<T>(object a)
+public void F(object a)
+//B.F(object a) 
+
+275
+public void F<T>(object a)
+public void F(string[] a)
+//A.F(int) 
+
+240
+public void F<T>(string[] a)
+public void F<T>(object a)
+//A.F(int) 
+
+238
+public void F<T>(string[] a)
+public void F<T>(params T[] a)
+//B.F(params T[] a) 
+
+200
+public void F<T>(int a)
+public void F<T>(string[] a)
+//A.F(int) 
+
+199
+public void F<T>(int a)
+public void F<T>(params T[] a)
+//B.F(params T[] a) 
+
+176
+public void F<T>(params T[] a)
+public override void F(int a)
+//B.F(params T[] a) 
+
+157
+public void F<T>(params T[] a)
+public void F(int a)
+//B.F(int a) 
+
+137
+public void F(object a)
+public override void F(int a)
+//B.F(object a) 
+
+121
+public void F(object a)
+public void F<T>(int a)
+//B.F(object a) 
+
+120
+public void F(object a)
+public void F<T>(params T[] a)
+//B.F(params T[] a) 
+
+118
+public void F(object a)
+public void F(int a)
+//B.F(int a) 
+!!!!! Если здесь override приставить к объектовому, то ошибка (no suitable method)
+!!!!! Если к интовому, то вывод меняется на объектовый

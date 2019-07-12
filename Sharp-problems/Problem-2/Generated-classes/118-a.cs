@@ -11,9 +11,10 @@
                 Console.WriteLine("A.F(int)");
             }
         }
-		class B99 : A  {
-public void F(string[] a)	{
-	Console.WriteLine("B.F(string[] a)");    
+		class B119 : A  {
+//public void F(object a)	{
+public override void F(object a)	{
+	Console.WriteLine("B.F(object a)");    
 	}
 public override void F(int a)	{
 	Console.WriteLine("B.F(int a)");    
@@ -21,7 +22,7 @@ public override void F(int a)	{
 }
 public static void Main(string[] args)
 {
-new B99().F(33);
+new B119().F(33);
 }
 
 }

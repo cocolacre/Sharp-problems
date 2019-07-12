@@ -12,7 +12,8 @@
             }
         }
 		class B119 : A  {
-public void F(object a)	{
+//public void F(object a)	{
+public override void F(object a)	{
 	Console.WriteLine("B.F(object a)");    
 	}
 public void F(int a)	{
