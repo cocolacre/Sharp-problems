@@ -21,7 +21,8 @@ namespace Problems
         public static void Main(string[] args)
         {
             a += F(); //same as a=a+F();
-            b = H() + b; //в эвал.стак грузится 1 + 3, где тройка уже вычислена на предыдущем шаге.
+            b = H() + b; //в эвал.стак грузится 1 + 3, где тройка уже вычислена 
+			             // в левой части выражения.
             Console.WriteLine(a); // 1
             Console.WriteLine(b); // 4
         }
@@ -42,3 +43,12 @@ namespace Problems
 // присваивается переменной a, которая выводится в консоль.
 // Например, заменив порядок на a = F() + a, мы получим 
 // a = 1 + (0 + 3).
+// IL_0001:  ldsfld     int32 Problems.Program::a
+// IL_0006:  call       int32 Problems.Program::F()
+// IL_000b:  add
+// IL_000c:  stsfld     int32 Problems.Program::a
+// IL_0011:  call       int32 Problems.Program::H()
+// IL_0016:  ldsfld     int32 Problems.Program::b
+// IL_001b:  add
+// IL_001c:  stsfld     int32 Problems.Program::b
+// IL_0021:  ldsfld     int32 Problems.Program::a
