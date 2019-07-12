@@ -52,6 +52,31 @@ with open('generated_classes.cs', 'w') as f:
         data = class_declare_string + mc + '\n}\n'
         print(data)
         f.write(data)
+for ci, mc in enumerate(methods_combos):
+    data0="""
+	namespace Problems
+{
+    using System;
+    internal class Program
+    {
+        class A
+        {
+            public virtual void F(int a)
+            {
+                Console.WriteLine("A.F(int)");
+            }
+        }
+		"""
+    with open('Generated-classes\{0}.cs'.format(ci), 'w') as f:
+        f.write(data0)
+        class_declare_string = "class B{0} : A ".format(ci+1) + ' {\n'
+        data = class_declare_string + mc + '\n}\n'
+        f.write(data)
+        data1 = """public static void Main(string[] args)""" +'\n{\n'+"new B{0}().F(33);".format(ci+1)+'\n}\n'*3
+        f.write(data1)
+        #break
+		
+
 sys.exit()
 """
 
