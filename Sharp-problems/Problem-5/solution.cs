@@ -5,16 +5,25 @@ namespace Problems
     internal class Program
     {
         private static int a = 0;
+        private static int b = 0;
 
         static int F()
         {
             a = a + 3;
             return 1;
         }
+		
+		static int H()
+        {
+            b = b + 3;
+            return 1;
+        }
         public static void Main(string[] args)
         {
             a += F();
-            Console.WriteLine(a);
+            b = H() + b;
+            Console.WriteLine(a); // 1
+            Console.WriteLine(b); // 4
         }
     }
 }
