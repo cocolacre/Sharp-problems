@@ -56,3 +56,6 @@ namespace Problems
 // это не меняет выполнение программы. 
 // (см. problem_2-A.cs и problem_2-A.exe)
 // Так в чем же дело?
+// Открываем пункт 12.6.4
+// стандарта http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-334.pdf
+// 
