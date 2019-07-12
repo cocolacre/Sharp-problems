@@ -5,4 +5,10 @@ Problems-4/
 Problems-5/
 Problems-6/
 Problems-7/
+
 token_extractor.py
+	extract ~c# tokens~ from problems' statements.
+tokens.txt
+	extracted tokens
+csc.exe
+	"C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe"
