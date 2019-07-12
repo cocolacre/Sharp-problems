@@ -20,8 +20,8 @@ namespace Problems
         }
         public static void Main(string[] args)
         {
-            a += F();
-            b = H() + b;
+            a += F(); //same as a=a+F();
+            b = H() + b; //в эвал.стак грузится 1 + 3, где тройка уже вычислена на предыдущем шаге.
             Console.WriteLine(a); // 1
             Console.WriteLine(b); // 4
         }
