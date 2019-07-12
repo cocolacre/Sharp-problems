@@ -10,7 +10,7 @@ method_sig_1.append("public override")
 
 method_sig_2.append('')
 method_sig_2.append('<T>')
-method_sig_2.append('void')
+#method_sig_2.append('void')
 method_sig_2.append('<string>')
 method_sig_2.append('<int>' )
 
